@@ -34,14 +34,14 @@
 
 ## TODOs
 <!-- x marks completed items -->
-- [] Add case study summary to README.md
+- [x] Add case study summary to README.md
 - [x] Add both partners' names to README.md
 - [] Add links to Case Study and Design documents
 ### Case Study Document
 - [x] Catchy Title
-- [] Problem statement
-- [] Target Audience
-- [] Core features
+- [x] Problem statement
+- [x] Target Audience
+- [x] Core features
 ### Design Documentation
 - [] Color Palette (romantic/affectionate hexcodes)
 - [] Typography
