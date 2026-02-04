@@ -19,8 +19,8 @@
     - chore (cleanups),
     - fix (major fixes),
     - hotfix (small/minor fixes).
-4. Push changes to remote development branch
-    `git push orign development`
+4. Push changes to github
+    `git push origin feature/hero-section`
 5. Create a PR and request a review from collaborator.
     - ensure to change choose "development" as base branch for the PR.
 5. Switch back to development branch and pull changes from remote to local to main
