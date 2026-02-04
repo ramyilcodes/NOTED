@@ -36,7 +36,8 @@
 <!-- x marks completed items -->
 - [x] Add case study summary to README.md
 - [x] Add both partners' names to README.md
-- [] Add links to Case Study and Design documents
+- [x] Add link to Case Study
+- [] Add link to Desing Document
 ### Case Study Document
 - [x] Catchy Title
 - [x] Problem statement
@@ -51,7 +52,7 @@
 - [] Navigation
 - [] Hero Section (with a big "hook" for the project)
 - [] About/Features: 3 distinct sections explaining the service
-- [] CTa: Button or form
+- [] CTA: Button or form
 ### Deployment
 - [] Connect repo to vercel
 - [] Ensure every push to main triggers a redeploy
