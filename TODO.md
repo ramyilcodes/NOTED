@@ -8,7 +8,7 @@
     git pull origin development
     ```
 2. For each feature, branch out from the development branch
-    `git checkout -b feature/hero-section`
+    `git checkout -b <feature/branchname>`
 3. Add and commit changes
     ```
     git add index.html
@@ -19,8 +19,8 @@
     - chore (cleanups),
     - fix (major fixes),
     - hotfix (small/minor fixes).
-4. Push changes to remote development branch
-    `git push orign development`
+4. Push changes to github
+    `git push origin <feature/branchname>`
 5. Create a PR and request a review from collaborator.
     - ensure to change choose "development" as base branch for the PR.
 5. Switch back to development branch and pull changes from remote to local to main
@@ -34,14 +34,15 @@
 
 ## TODOs
 <!-- x marks completed items -->
-- [] Add case study summary to README.md
+- [x] Add case study summary to README.md
 - [x] Add both partners' names to README.md
-- [] Add links to Case Study and Design documents
+- [x] Add link to Case Study
+- [] Add link to Desing Document
 ### Case Study Document
 - [x] Catchy Title
-- [] Problem statement
-- [] Target Audience
-- [] Core features
+- [x] Problem statement
+- [x] Target Audience
+- [x] Core features
 ### Design Documentation
 - [] Color Palette (romantic/affectionate hexcodes)
 - [] Typography
@@ -51,7 +52,7 @@
 - [] Navigation
 - [] Hero Section (with a big "hook" for the project)
 - [] About/Features: 3 distinct sections explaining the service
-- [] CTa: Button or form
+- [] CTA: Button or form
 ### Deployment
 - [] Connect repo to vercel
 - [] Ensure every push to main triggers a redeploy
