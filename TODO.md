@@ -8,7 +8,7 @@
     git pull origin development
     ```
 2. For each feature, branch out from the development branch
-    `git checkout -b feature/hero-section`
+    `git checkout -b <feature/branchname>`
 3. Add and commit changes
     ```
     git add index.html
@@ -20,7 +20,7 @@
     - fix (major fixes),
     - hotfix (small/minor fixes).
 4. Push changes to github
-    `git push origin feature/hero-section`
+    `git push origin <feature/branchname>`
 5. Create a PR and request a review from collaborator.
     - ensure to change choose "development" as base branch for the PR.
 5. Switch back to development branch and pull changes from remote to local to main
