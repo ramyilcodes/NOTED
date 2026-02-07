@@ -37,23 +37,23 @@
 - [x] Add case study summary to README.md
 - [x] Add both partners' names to README.md
 - [x] Add link to Case Study
-- [] Add link to Desing Document
+- [x] Add link to Design Document
 ### Case Study Document
 - [x] Catchy Title
 - [x] Problem statement
 - [x] Target Audience
 - [x] Core features
 ### Design Documentation
-- [] Color Palette (romantic/affectionate hexcodes)
-- [] Typography
+- [x] Color Palette (romantic/affectionate hexcodes)
+- [x] Typography
 - [] Layout Design (brief sketch of the UI)
-- [] References (Links to inspiration)
+- [x] References (Links to inspiration)
 ### HTML Implementation (must haves)
-- [] Navigation
-- [] Hero Section (with a big "hook" for the project)
-- [] About/Features: 3 distinct sections explaining the service
-- [] CTA: Button or form
+- [x] Navigation
+- [x] Hero Section (with a big "hook" for the project)
+- [x] About/Features: 3 distinct sections explaining the service
+- [x] CTA: Button or form
 ### Deployment
-- [] Connect repo to vercel
-- [] Ensure every push to main triggers a redeploy
-- [] Add live link to the top of README.md
+- [x] Connect repo to vercel
+- [x] Ensure every push to main triggers a redeploy
+- [x] Add live link to the top of README.md

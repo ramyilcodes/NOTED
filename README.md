@@ -1,6 +1,11 @@
 # NOTED
 Small acts of care are forgotten quickly, so we are created Noted, a platform to document the small things for your loved ones.
 
+## Links
+1. [Vercel Live Link](https://noted-liart.vercel.app/)
+2. [Complete Case Study](https://docs.google.com/document/d/1PNWGTFha2Ex8Ejf2MR0xuTH8S29kVWhKKLn2fBgY0qk/edit?usp=sharing)
+3. [Design Document](https://docs.google.com/document/d/1cLZ7skIPKRAzXrlJq7CEi2VA9JxkPAidrHWKwe0HM3A/edit?usp=sharing)
+
 ## Project Setup
 Follow these steps to run the project locally.
 
@@ -27,7 +32,7 @@ npx serve
 ---
 
 
-## Case Study
+## Case Study Summary
 Link to [complete case study](https://docs.google.com/document/d/1PNWGTFha2Ex8Ejf2MR0xuTH8S29kVWhKKLn2fBgY0qk/edit?usp=sharing) here.
 
 Noted is a reflective relationship platform designed to help people recognize and communicate the small, everyday acts of care that sustain emotional connection. Instead of emphasizing grand romantic gestures, it reframes love as presence rather than performance. Highlighting the quiet moments that often go unnoticed but matter most.
