@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/form.css" />
+    <title>Noted: Register</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Register</h1>
+    </header>
+
+    <section>
+      <form action="" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Personal Details</legend>
+          <!-- will be hidden with css-->
+
+          <label for="userName">Full Name</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="John Doe"
+            autocomplete="name"
+            required
+          />
+
+          <label for="userEmail">Email</label>
+          <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            placeholder="johndoe@gmail.com"
+            autocomplete="email"
+            required
+          />
+
+          <label for="userPassword">Password</label>
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            required
+          />
+
+          <label for="confirmUserPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmUserPassword"
+            id="confirmUserPassword"
+            required
+          />
+        </fieldset>
+
+        <button type="submit">
+          <a href="../../app/feed.html">Register</a>
+        </button>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </section>
+
+    <footer>
+      <!-- copyright and attribution -->
+      <p>
+        &copy; 2026 Noted. Designed & Developed by
+        <a href="https://github.com/ramyilcodes">Ramnan Ramyil</a> and
+        <a href="https://ejemeniboi.com/">Ejemen Iboi</a>
+      </p>
+    </footer>
+  </body>
+</html>
