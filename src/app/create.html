@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noted: Create</title>
+  </head>
+  <body>
+    <main>
+      <!-- visually hidden with css -->
+      <h1 class="visually-hidden">Create A Note</h1>
+
+      <form action="" method="post">
+        <!-- wrapper  -->
+        <section>
+
+          <section class="input-field">
+            <label for="postContent">What happened today</label>
+            <textarea name="postContent" id="postContent"></textarea>
+          </section>
+
+          <fieldset>
+            <legend>Who should see this?</legend>
+            <input
+              type="radio"
+              name="visibility"
+              id="visibility-everyone"
+              value="everyone"
+              checked
+            />
+            <label for="choice-everyone">Everyone</label>
+
+            <input
+              type="radio"
+              name="visibility"
+              id="visibility-yourBoo"
+              value="yourBoo"
+            />
+            <label for="choice-yourBoo">Your boo</label>
+          </fieldset>
+
+          <section>
+            <label for="postImage">Any evidence you want to add?</label>
+            <input
+              type="file"
+              name="postImage"
+              id="postImage"
+              accept=".png, .jpg, .jpeg"
+            />
+
+            <p>
+              Supported files <span class="accent">*.png</span>,
+              <span class="accent">*.jpg</span>,
+              <span class="accent">*.jpeg</span>
+            </p>
+          </section>
+        </section>
+
+        <button type="submit">Create Note</button>
+      </form>
+    </main>
+  </body>
+</html>
