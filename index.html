@@ -4,46 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noted</title>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css" />
   </head>
   <body>
     <header>
       <!-- nav bar -->
       <nav>
         <a href="">Noted</a>
-
-        <div>
-          <a href="#intro-section">intro</a>
-          <a href="#feature-section">features</a>
-          <a href="#waitlist-section">Join our waitlist</a>
-        </div>
+        <a href="#intro-section">intro</a>
+        <a href="#feature-section">features</a>
+        <a href="#waitlist-section">Join our waitlist</a>
       </nav>
 
-      <!-- hero section -->
-      <section>
-        <div aria-hidden="true">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>
-          <h1>Love lives in the small things</h1>
-          <p>
-            A reflection on the everyday actions that sustain us, often, unseen
-            but deeply felt.
-          </p>
-          <button>Save the gestures</button>
-        </div>
-      </section>
+      <!-- hero -->
+      <div aria-hidden="true">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <h1>Love lives in the small things</h1>
+        <p>
+          A reflection on the everyday actions that sustain us, often, unseen
+          but deeply felt.
+        </p>
+        <button>Save the gestures</button>
+      </div>
     </header>
 
     <main>
       <!-- intro section -->
       <section id="intro-section">
-        <header>
-          <h2>The Grand Gesture Myth</h2>
-        </header>
+        <h2>The Grand Gesture Myth</h2>
 
         <blockquote>
           <p>
@@ -62,10 +55,8 @@
 
       <!-- features section  -->
       <section id="features-section">
-        <header>
-          <h2>Features</h2>
-          <p>Here are our core features to help with the micro-acts of care.</p>
-        </header>
+        <h2>Features</h2>
+        <p>Here are our core features to help with the micro-acts of care.</p>
 
         <!-- features wrapper -->
         <div>
@@ -75,17 +66,14 @@
               <img src="images/take_notes.svg" alt="Notes icon" />
             </figure>
 
-            <header>
-              <h3>Take Notes</h3>
-
-              <p>
-                Users can document the small gestures they make for their loved
-                ones. Documenting everyday actions that are often forgotten or
-                dismissed as insignificant. This feature addresses the feeling
-                of “I do so much, but it’s never noticed” by giving small acts a
-                permanent place.
-              </p>
-            </header>
+            <h3>Take Notes</h3>
+            <p>
+              Users can document the small gestures they make for their loved
+              ones. Documenting everyday actions that are often forgotten or
+              dismissed as insignificant. This feature addresses the feeling of
+              “I do so much, but it’s never noticed” by giving small acts a
+              permanent place.
+            </p>
           </article>
 
           <!-- Feature 2 section -->
@@ -94,16 +82,13 @@
               <img src="images/love_bytes.svg" alt="Love Bytes icon" />
             </figure>
 
-            <header>
-              <h3>Love Bytes</h3>
-
-              <p>
-                Love Bytes allow users to send regular, low-pressure check-ins
-                to their partner. Sharing what they’re doing and how they feel
-                in the moment. This reduces the emotional gap created by silence
-                and helps partners feel thought of, even during routine moments.
-              </p>
-            </header>
+            <h3>Love Bytes</h3>
+            <p>
+              Love Bytes allow users to send regular, low-pressure check-ins to
+              their partner. Sharing what they’re doing and how they feel in the
+              moment. This reduces the emotional gap created by silence and
+              helps partners feel thought of, even during routine moments.
+            </p>
           </article>
 
           <!-- Feature 3 section -->
@@ -112,16 +97,13 @@
               <img src="images/reminders.svg" alt="Reminder Icon" />
             </figure>
 
-            <header>
-              <h3>Reminders</h3>
-
-              <p>
-                Gentle reminders encourage users to engage in small acts of care
-                consistently. Not to optimize productivity, but to support being
-                emotionally intentional. These reminders act as nudges toward
-                presence, not obligation.
-              </p>
-            </header>
+            <h3>Reminders</h3>
+            <p>
+              Gentle reminders encourage users to engage in small acts of care
+              consistently. Not to optimize productivity, but to support being
+              emotionally intentional. These reminders act as nudges toward
+              presence, not obligation.
+            </p>
           </article>
         </div>
       </section>
@@ -133,45 +115,33 @@
         <form action="/" method="post">
           <fieldset>
             <legend class="visually-hidden">Waitlist Signup</legend>
-            <!-- will be hidden with css-->
-            <div>
-              <!-- field wrapper -->
-              <label for="userName"> How should we address you? </label>
 
-              <input
-                type="text"
-                id="userName"
-                name="userName"
-                placeholder="John Doe"
-                autocomplete="name"
-                required
-              />
-            </div>
+            <label for="userName">How should we address you?</label>
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="John Doe"
+              autocomplete="name"
+              required
+            />
 
-            <div>
-              <!-- field wrapper -->
-              <label for="userEmail"> How can we reach you? </label>
+            <label for="userEmail">How can we reach you?</label>
+            <input
+              type="email"
+              id="userEmail"
+              name="userEmail"
+              placeholder="johndoe@gmail.com"
+              autocomplete="email"
+              required
+            />
 
-              <input
-                type="email"
-                id="userEmail"
-                name="userEmail"
-                placeholder="johndoe@gmail.com"
-                autocomplete="email"
-                required
-              />
-            </div>
-
-            <div>
-              <!-- field wrapper -->
-              <label for="userRecommendation">
-                Anything you wanna see or recommend?
-              </label>
-
-              <textarea name="recommendation" id="userRecommendation">
-                What are your thoughts on the project?
-              </textarea>
-            </div>
+            <label for="userRecommendation">
+              Anything you wanna see or recommend?
+            </label>
+            <textarea name="recommendation" id="userRecommendation">
+              What are your thoughts on the project?
+            </textarea>
           </fieldset>
           <button type="submit">Submit</button>
         </form>
@@ -180,7 +150,11 @@
 
     <footer>
       <!-- copyright and attribution -->
-      <p>&copy; 2026 Noted. Designed & Developed by <a href="https://github.com/ramyilcodes">Ramnan Ramyil</a> and <a href="https://ejemeniboi.com/">Ejemen Iboi</a></p>
+      <p>
+        &copy; 2026 Noted. Designed & Developed by
+        <a href="https://github.com/ramyilcodes">Ramnan Ramyil</a> and
+        <a href="https://ejemeniboi.com/">Ejemen Iboi</a>
+      </p>
     </footer>
   </body>
 </html>
