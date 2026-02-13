@@ -7,7 +7,7 @@ Small acts of care are forgotten quickly, so we are created Noted, a platform to
 3. [Design Document](https://docs.google.com/document/d/1cLZ7skIPKRAzXrlJq7CEi2VA9JxkPAidrHWKwe0HM3A/edit?usp=sharing)
 4. [Contribution Table](https://docs.google.com/spreadsheets/d/1YYsVMW0SGxL__6XyLTcpdheRG8QLJVg2VCM85gXqKtk/edit?usp=sharing)
 5. [1st Presentation](https://docs.google.com/presentation/d/1Nbqrjm2MTgQhb3uXlN_r87QIMqcf7VXdgsS5AIWqVug/edit?usp=sharing)
-6. [Current Presentation](https://docs.google.com/presentation/d/1-CfUpB4vWejl_w3Oztbcib7x1w01POYHImFoQxnW0-Q/edit?usp=sharing)
+6. [Current Presentation](https://docs.google.com/presentation/d/1ipUnzhjRYOOEs_QzYR0Iav29CwuVbm0Fxq73Oyb6ygs/edit?usp=sharing)
 
 ## Project Setup
 Follow these steps to run the project locally.
