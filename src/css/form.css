@@ -30,9 +30,10 @@
   }
 
   .form-footer {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: var(--space-6);
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+    margin-top: var(--space-8);
     color: var(--color-gray-700);
   }
 
