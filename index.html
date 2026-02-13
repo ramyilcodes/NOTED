@@ -3,33 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/elements.css" />
+    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Noted</title>
-    <link rel="stylesheet" href="css/base.css" />
   </head>
   <body>
-    <header>
+    <header class="hero-section flex flex-col items-center justify-center">
       <!-- nav bar -->
-      <nav>
+      <nav class="hero-section__nav flex items-center justify-end gap-6">
         <a href="">Noted</a>
         <a href="#intro-section">intro</a>
         <a href="#feature-section">features</a>
-        <a href="#waitlist-section">Join our waitlist</a>
+        <a href="#waitlist-section" class="btn btn-primary">
+          <span>Join our</span> waitlist
+        </a>
       </nav>
 
       <!-- hero -->
-      <div aria-hidden="true">
+      <div aria-hidden="true" class="hero-section__decorative">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <div>
-        <h1>Love lives in the small things</h1>
+      <div class="hero-section__content flex flex-col gap-6">
+        <h1>Love lives in the <span>small</span> things</h1>
         <p>
           A reflection on the everyday actions that sustain us, often, unseen
           but deeply felt.
         </p>
-        <button>Save the gestures</button>
+        <button class="btn btn-primary" type="button">Save the gestures</button>
       </div>
     </header>
 

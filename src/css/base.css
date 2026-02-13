@@ -1,4 +1,4 @@
-@layer tokens, base, components, utilities;
+@layer tokens, base, elements, components, utilities;
 
 @layer tokens {
   :root {
@@ -31,6 +31,7 @@
     /* Core colors */
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-charcoal: #343633;
 
     /* Semantic colors (light theme defaults) */
     --color-bg: var(--color-white);
@@ -124,6 +125,16 @@
     font-size: var(--font-size-base);
     color: var(--color-text);
     background-color: var(--color-bg);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s ease-out;
+
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 }
 
