@@ -1,0 +1,34 @@
+* {
+  font-weight: 400 !important;
+  font-family: var(--font-app);
+  letter-spacing: 0.08em;
+}
+
+body {
+  display: grid;
+  min-height: 100svh;
+  grid-template-columns: 16rem 1fr;
+  color: var(--color-charcoal);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-brand-50),
+    var(--color-white) 30%
+  );
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  padding: var(--space-4);
+}
+
+.sidebar__logout {
+  margin-top: auto;
+}
+
+main {
+  min-height: 100svh;
+  padding-inline: var(--space-4);
+}

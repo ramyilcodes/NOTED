@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Noted: Create</title>
+    <title>Noted: Feed</title>
   </head>
   <body>
     <aside class="sidebar flex flex-col gap-4">
@@ -45,52 +45,44 @@
 
     <main>
       <!-- visually hidden with css -->
-      <h1 class="visually-hidden">Create A Note</h1>
+      <h2 class="visually-hidden">Your Feed</h2>
 
-      <form action="" method="post">
-        <fieldset class="input-field">
-          <label for="postContent">What happened today</label>
-          <textarea name="postContent" id="postContent"></textarea>
-        </fieldset>
-
-        <fieldset>
-          <legend>Who should see this?</legend>
-          <input
-            type="radio"
-            name="visibility"
-            id="visibility-everyone"
-            value="everyone"
-            checked
-          />
-          <label for="choice-everyone">Everyone</label>
-
-          <input
-            type="radio"
-            name="visibility"
-            id="visibility-yourBoo"
-            value="yourBoo"
-          />
-          <label for="choice-yourBoo">Your boo</label>
-        </fieldset>
-
-        <fieldset>
-          <label for="postImage">Any evidence you want to add?</label>
-          <input
-            type="file"
-            name="postImage"
-            id="postImage"
-            accept=".png, .jpg, .jpeg"
-          />
+      <section>
+        <!-- post -->
+        <article>
+          <header>
+            <figure>
+              <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
+            </figure>
+            <h3>Ramnan Ramyil</h3>
+          </header>
 
           <p>
-            Supported files <span class="accent">*.png</span>,
-            <span class="accent">*.jpg</span>,
-            <span class="accent">*.jpeg</span>
+            Guess who’s trying skincare now. Now I’m standing in front of the
+            mirror at night, tapping some kind of serum on my face.
           </p>
-        </fieldset>
 
-        <button type="submit">Create Note</button>
-      </form>
+          <figure>
+            <!-- picture in the post -->
+            <img src="" alt="Applying serum in the mirror" />
+          </figure>
+        </article>
+
+        <!-- post -->
+        <article>
+          <header>
+            <figure>
+              <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
+            </figure>
+            <h3>Sofia Abubakar</h3>
+          </header>
+
+          <p>
+            Guess who’s trying skincare now. Now I’m standing in front of the
+            mirror at night, tapping some kind of serum on my face.
+          </p>
+        </article>
+      </section>
     </main>
   </body>
 </html>
