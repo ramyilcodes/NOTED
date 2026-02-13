@@ -45,16 +45,17 @@
       background-color: var(--color-brand-500);
     }
   }
-}
 
-.section-heading {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--color-brand-600);
-  margin-bottom: var(--space-2);
+  /* Section heading (reusable block) */
+  .section-heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--color-brand-600);
+    margin-bottom: var(--space-2);
+  }
 
-  &::after {
+  .section-heading::after {
     content: "";
     display: block;
     width: 100%;

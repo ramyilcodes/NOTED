@@ -63,10 +63,10 @@
       font-size: var(--font-size-lg);
     }
   }
+}
 
-  button {
-    margin-left: auto;
-  }
+.hero-section__cta {
+  margin-left: auto;
 }
 
 /* INTRO SECTION */
