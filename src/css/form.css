@@ -1,23 +1,124 @@
-body{
-    background: linear-gradient(to bottom, var(--color-brand-50),var(--color-white));
+@layer elements {
+  .form-container {
+    background: linear-gradient(
+      to bottom,
+      var(--color-brand-50),
+      var(--color-white)
+    );
     width: 100vw;
-    height:100vh;
-}
+    height: 100vh;
+  }
 
-.input-field{
+  /* utility */
+  .text-center {
+    text-align: center;
+  }
+
+  .text-left{
+    text-align: left;
+  }
+
+  .form-heading {
+    font-weight: 400;
+  }
+
+  /* form */
+  .form {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: var(--space-6);
+    color: var(--color-gray-700);
+  }
+
+  .account {
+    margin-top: var(--space-8);
+    color: var(--color-gray-700);
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* input and textarea */
+  .input-field, .input-area{
     font-family: inherit;
+    font-size: var(--font-size-base);
     color: var(--color-gray-700);
     background-color: var(--color-gray-50);
-    border:1px solid var(--color-gray-200);
-    display:block;
-    
-}
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    /* height: 2.5rem; */
+    padding-inline: var(--space-2);
+    width: 100%;
+    margin-block: var(--space-2) var(--space-8);
+    display: block;
+  }
 
-.input-field::placeholder{
-    font-family: inherit;
-    color: var(--color-text-muted);   
-}
+  .input-field{
+    height: 2.5rem;
+  }
+  .input-area{
+    height: 7.5rem;
+    resize:none;
+  }
 
-label, a, button{
+  .input-field::placeholder{
+    color: var(--color-text-muted);
+  }
+
+  .input-field:focus {
+    outline: 1px solid var(--focus-ring-color);
+  }
+
+  /* accent texts and links */
+  .accent-text,
+  .accent-link {
+    text-decoration: none;
     color: var(--color-primary);
+  }
+
+  .accent-link:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    transition: 0.2s ease-out;
+  }
+
+  /* button styles */
+  .btn-submit {
+    border: none;
+    width: 9.06rem;
+    height: 2.5rem;
+    align-self: flex-end;
+    font-family: inherit;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transition: 0.2s ease-out;
+    a {
+      color: var(--color-white);
+      text-decoration: none;
+    }
+  }
+
+  .btn-submit:hover {
+    background-color: var(--color-primary-hover);
+  }
 }

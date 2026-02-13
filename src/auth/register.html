@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Noted: Register</title>
   </head>
 
-  <body class="handwritten">
+  <body class="form-container handwritten flex flex-col items-center justify-center gap-6">
     <header>
-      <h1>Sign Up to Noted</h1>
+      <h1 class="form-heading">Sign Up to Noted</h1>
     </header>
 
-    <section>
-      <form action="" method="post">
+    <main>
+      <form action="" method="post" class="form flex flex-col">
         <fieldset>
           <legend class="visually-hidden">Personal Details</legend>
           <!-- will be hidden with css-->
 
-          <label for="userName">Full Name</label>
+          <label for="userName" class="input-label accent-text">Full Name</label>
           <input
             type="text"
             id="userName"
@@ -30,7 +34,7 @@
             class="input-field"
           />
 
-          <label for="userEmail">Email</label>
+          <label for="userEmail" class="input-label accent-text">Email</label>
           <input
             type="email"
             id="userEmail"
@@ -41,7 +45,7 @@
             class="input-field"
           />
 
-          <label for="userPassword">Password</label>
+          <label for="userPassword" class="input-label accent-text">Password</label>
           <input
             type="password"
             name="userPassword"
@@ -50,7 +54,7 @@
             class="input-field"
           />
 
-          <label for="confirmUserPassword">Confirm Password</label>
+          <label for="confirmUserPassword" class="input-label accent-text">Confirm Password</label>
           <input
             type="password"
             name="confirmUserPassword"
@@ -60,20 +64,20 @@
           />
         </fieldset>
 
-        <button type="submit">
+        <button type="submit" class="btn-submit">
           <a href="../app/feed.html">Register</a>
         </button>
 
-        <p>Already have an account? <a href="login.html">Login</a></p>
+        <p class="text-center account">Already have an account? <a href="login.html" class="accent-link">Login</a></p>
       </form>
-    </section>
+    </main>
 
-    <footer>
+    <footer class="form-footer">
       <!-- copyright and attribution -->
       <p>
         &copy; 2026 Noted. Designed & Developed by
-        <a href="https://github.com/ramyilcodes">Ramnan Ramyil</a> and
-        <a href="https://ejemeniboi.com/">Ejemen Iboi</a>
+        <a href="https://github.com/ramyilcodes" class="accent-link">Ramnan Ramyil</a> and
+        <a href="https://ejemeniboi.com/" class="accent-link">Ejemen Iboi</a>
       </p>
     </footer>
   </body>
