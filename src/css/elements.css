@@ -1,4 +1,9 @@
 @layer elements {
+  .container {
+    max-width: 60rem;
+    margin-inline: auto;
+  }
+
   /* Buttons */
   .btn {
     font-family: var(--font-body);
