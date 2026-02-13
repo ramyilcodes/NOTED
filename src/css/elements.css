@@ -1,0 +1,43 @@
+@layer elements {
+  /* Buttons */
+  .btn {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius-md);
+    padding-inline: var(--space-6);
+    height: 2.5rem;
+    transition:
+      background-color 0.2s ease-out,
+      color 0.2s ease-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid var(--focus-ring-color);
+    outline-offset: 2px;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+    }
+
+    &:active {
+      background-color: var(--color-brand-500);
+    }
+  }
+}
