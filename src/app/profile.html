@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/elements.css" />
     <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,14 +47,14 @@
       </a>
     </aside>
 
-    <main>
+    <main class="flex flex-col justify-center items-center gap-2">
       <!-- visually hidden with css -->
       <h2 class="visually-hidden">Your Profile</h2>
-      <figure>
+      <figure class="profile__image">
         <img src="../assets/default-pfp.svg" alt="defalut pfp" />
       </figure>
-      <h1>Ramnan Ramyil</h1>
-      <p>ramnan@gmail.com</p>
+      <h1 class="profile__name">Ramnan Ramyil</h1>
+      <p class="profile__email">ramnan@gmail.com</p>
     </main>
   </body>
 </html>
