@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/elements.css" />
     <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,53 +47,84 @@
       </a>
     </aside>
 
-    <main>
+    <main class="create-main flex flex-col justify-center items-center">
       <!-- visually hidden with css -->
       <h1 class="visually-hidden">Create A Note</h1>
 
-      <form action="" method="post">
-        <fieldset class="input-field">
-          <label for="postContent">What happened today</label>
-          <textarea name="postContent" id="postContent"></textarea>
-        </fieldset>
+      <form
+        action=""
+        method="post"
+        class="form create-form flex flex-col gap-6"
+      >
+        <div class="create-form__grid">
+          <div class="create-form__left flex flex-col gap-6">
+            <fieldset class="flex flex-col gap-2">
+              <label for="postContent" class="form-label accent-text"
+                >What happened today?</label
+              >
+              <textarea
+                name="postContent"
+                id="postContent"
+                class="input-area"
+                placeholder=""
+              ></textarea>
+            </fieldset>
 
-        <fieldset>
-          <legend>Who should see this?</legend>
-          <input
-            type="radio"
-            name="visibility"
-            id="visibility-everyone"
-            value="everyone"
-            checked
-          />
-          <label for="choice-everyone">Everyone</label>
+            <fieldset class="flex flex-col gap-2">
+              <legend class="form-label accent-text">
+                Who should see this?
+              </legend>
+              <div class="radio-group flex gap-2">
+                <label for="visibility-everyone" class="radio-option">
+                  <input
+                    type="radio"
+                    name="visibility"
+                    id="visibility-everyone"
+                    value="everyone"
+                    checked
+                  />
+                  <span>Everyone</span>
+                </label>
+                <label for="visibility-yourBoo" class="radio-option">
+                  <input
+                    type="radio"
+                    name="visibility"
+                    id="visibility-yourBoo"
+                    value="yourBoo"
+                  />
+                  <span>Your boo</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
 
-          <input
-            type="radio"
-            name="visibility"
-            id="visibility-yourBoo"
-            value="yourBoo"
-          />
-          <label for="choice-yourBoo">Your boo</label>
-        </fieldset>
+          <fieldset
+            class="create-form__upload flex flex-col gap-2"
+          >
+            <label for="postImage" class="form-label accent-text">
+              Any evidence you want to add?
+            </label>
+            <div class="file-upload-zone flex flex-col justify-center items-center gap-2">
+              <input
+                type="file"
+                name="postImage"
+                id="postImage"
+                accept=".png,.jpg,.jpeg"
+                class="file-upload-input"
+              />
+              <span class="file-upload-label">Upload an Image</span>
+              <p class="create-form__hint text-muted">
+                Supported files <span class="accent-text">*.png</span>,
+                <span class="accent-text">*.jpg</span>,
+                <span class="accent-text">*.jpeg</span>
+              </p>
+            </div>
+          </fieldset>
+        </div>
 
-        <fieldset>
-          <label for="postImage">Any evidence you want to add?</label>
-          <input
-            type="file"
-            name="postImage"
-            id="postImage"
-            accept=".png, .jpg, .jpeg"
-          />
-
-          <p>
-            Supported files <span class="accent">*.png</span>,
-            <span class="accent">*.jpg</span>,
-            <span class="accent">*.jpeg</span>
-          </p>
-        </fieldset>
-
-        <button type="submit">Create Note</button>
+        <div class="create-form__submit flex justify-center">
+          <button type="submit" class="btn btn-secondary">Create Note</button>
+        </div>
       </form>
     </main>
   </body>
