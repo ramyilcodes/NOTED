@@ -37,12 +37,25 @@
     background-color: var(--color-primary);
     color: var(--color-text-inverse);
 
-    &:hover {
-      background-color: var(--color-primary-hover);
-    }
-
+    &:focus-visible,
     &:active {
       background-color: var(--color-brand-500);
+    }
+  }
+
+  .btn-secondary {
+    background-color: var(--color-brand-50);
+    color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-brand-100);
+      color: var(--color-primary-hover);
+    }
+
+    &:focus-visible,
+    &:active {
+      outline: 2px solid var(--focus-ring-color);
+      outline-offset: 2px;
     }
   }
 
