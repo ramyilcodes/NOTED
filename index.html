@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./src/css/base.css" />
     <link rel="stylesheet" href="./src/css/elements.css" />
     <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="stylesheet" href="src/css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -130,14 +131,14 @@
       </section>
 
       <!-- waitlist section -->
-      <section id="waitlist-section" class="waitlist">
-        <h2 class="waitlist__title">Join The Waitlist</h2>
+      <section id="waitlist-form" class="waitlist flex flex-col items-center">
+        <h2 class="waitlist_title text-left">Join The Waitlist</h2>
 
-        <form class="waitlist__form" action="/" method="post">
+        <form action="/" method="post" class="form flex flex-col">
           <fieldset>
             <legend class="visually-hidden">Waitlist Signup</legend>
 
-            <label for="userName">How should we address you?</label>
+            <label for="userName" class="input-label accent-text">How should we address you?</label>
             <input
               type="text"
               id="userName"
@@ -145,9 +146,10 @@
               placeholder="John Doe"
               autocomplete="name"
               required
+              class="input-field"
             />
 
-            <label for="userEmail">How can we reach you?</label>
+            <label for="userEmail" class="input-label accent-text">How can we reach you?</label>
             <input
               type="email"
               id="userEmail"
@@ -155,26 +157,25 @@
               placeholder="johndoe@gmail.com"
               autocomplete="email"
               required
+              class="input-field"
             />
 
-            <label for="userRecommendation">
+            <label for="userRecommendation" class="input-label accent-text">
               Anything you wanna see or recommend?
             </label>
-            <textarea name="recommendation" id="userRecommendation">
-              What are your thoughts on the project?
-            </textarea>
+            <textarea name="recommendation" id="userRecommendation" class="input-area text-left" placeholder="What are your thoughts on the project?"></textarea>
           </fieldset>
-          <button type="submit">Submit</button>
+          <a class="btn btn-primary">Submit</a>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="form-footer text-center">
       <!-- copyright and attribution -->
       <p>
         &copy; 2026 Noted. Designed & Developed by
-        <a href="https://github.com/ramyilcodes">Ramnan Ramyil</a> and
-        <a href="https://ejemeniboi.com/">Ejemen Iboi</a>
+        <a href="https://github.com/ramyilcodes" class="accent-link">Ramnan Ramyil</a> and
+        <a href="https://ejemeniboi.com/" class="accent-link">Ejemen Iboi</a>
       </p>
     </footer>
   </body>
