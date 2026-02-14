@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/elements.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/note.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noted: Feed</title>
+  </head>
+  <body>
+    <aside class="sidebar flex flex-col gap-4">
+      <header class="sidebar__header flex flex-col gap-4">
+        <a href="/index.html" class="sidebar__title">Noted</a>
+
+        <div class="sidebar__user flex gap-4 items-center">
+          <figure>
+            <img src="../assets/default-pfp.svg" alt="Leye Doe" />
+          </figure>
+          <h2>Ramnan Ramyil</h2>
+        </div>
+      </header>
+
+      <nav class="sidebar__nav flex flex-col gap-2">
+        <a href="./feed.html" class="sidebar__navitem sidebar__navitem--active">
+          Feed
+        </a>
+        <a href="./personal.html" class="sidebar__navitem">Personal</a>
+        <a href="./create.html" class="sidebar__navitem">Create</a>
+        <a href="./profile.html" class="sidebar__navitem">Profile</a>
+      </nav>
+
+      <!-- temporary direction to login page until we can use JS -->
+      <a
+        href="../auth/login.html"
+        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4"
+      >
+        Log out
+        <img src="../assets/log-out.svg" alt="Logout icon" />
+      </a>
+    </aside>
+
+    <main>
+      <!-- visually hidden with css -->
+      <h2 class="visually-hidden">Your Feed</h2>
+
+      <section class="notes-container flex flex-col gap-8">
+        <!-- post -->
+        <article class="note">
+          <figure>
+            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
+          </figure>
+
+          <div class="note_content flex flex-col gap-2">
+            <h3 class="note__author">Ramnan Ramyil</h3>
+            <p class="note__text">
+              Guess who&apos;s trying skincare now. Now I&apos;m standing in
+              front of the mirror at night, tapping some kind of serum on my
+              face.
+            </p>
+
+            <figure class="note_attachment">
+              <!-- picture in the post -->
+              <img src="" alt="Applying serum in the mirror" />
+            </figure>
+          </div>
+        </article>
+
+        <!-- post -->
+        <article class="note">
+          <figure>
+            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
+          </figure>
+
+          <div class="note_content flex flex-col gap-2">
+            <h3 class="note__author">Sofia Abubakar</h3>
+            <p class="note__text">
+              Guess who’s trying skincare now. Now I’m standing in front of the
+            mirror at night, tapping some kind of serum on my face.
+            </p>
+          </div>
+        </article>
+
+        <!-- post -->
+        <article class="note">
+          <figure>
+            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
+          </figure>
+
+          <div class="note_content flex flex-col gap-2">
+            <h3 class="note__author">Ejemen Iboi</h3>
+            <p class="note__text"></p>
+
+            <figure class="note_attachment">
+              <!-- pictures in the post -->
+              <img src="" alt="Me with my boo" />
+              <img src="" alt="Me with my boo having coffee" />
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

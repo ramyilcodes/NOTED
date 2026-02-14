@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/elements.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noted: Feed</title>
+  </head>
+  <body>
+    <aside class="sidebar flex flex-col gap-4">
+      <header class="sidebar__header flex flex-col gap-4">
+        <a href="/index.html" class="sidebar__title">Noted</a>
+
+        <div class="sidebar__user flex gap-4 items-center">
+          <figure>
+            <img src="../assets/default-pfp.svg" alt="Leye Doe" />
+          </figure>
+          <h2>Ramnan Ramyil</h2>
+        </div>
+      </header>
+
+      <nav class="sidebar__nav flex flex-col gap-2">
+        <a href="./feed.html" class="sidebar__navitem sidebar__navitem--active">
+          Feed
+        </a>
+        <a href="./personal.html" class="sidebar__navitem">Personal</a>
+        <a href="./create.html" class="sidebar__navitem">Create</a>
+        <a href="./profile.html" class="sidebar__navitem">Profile</a>
+      </nav>
+
+      <!-- temporary direction to login page until we can use JS -->
+      <a
+        href="../auth/login.html"
+        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4"
+      >
+        Log out
+        <img src="../assets/log-out.svg" alt="Logout icon" />
+      </a>
+    </aside>
+
+    <main class="flex flex-col justify-center items-center gap-2">
+      <!-- visually hidden with css -->
+      <h2 class="visually-hidden">Your Profile</h2>
+      <figure class="profile__image">
+        <img src="../assets/default-pfp.svg" alt="defalut pfp" />
+      </figure>
+      <h1 class="profile__name">Ramnan Ramyil</h1>
+      <p class="profile__email">ramnan@gmail.com</p>
+    </main>
+  </body>
+</html>

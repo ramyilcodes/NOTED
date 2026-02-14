@@ -1,0 +1,272 @@
+@layer tokens, base, elements, components, utilities;
+
+@layer tokens {
+  :root {
+    /* Hot Fuschia scale */
+    --color-brand-50: #ffe6ee;
+    --color-brand-100: #ffcedc;
+    --color-brand-200: #fe9db9;
+    --color-brand-300: #fe6b97;
+    --color-brand-400: #fd3a74;
+    --color-brand-500: #fd0951;
+    --color-brand-600: #ca0741;
+    --color-brand-700: #980531;
+    --color-brand-800: #650420;
+    --color-brand-900: #330210;
+    --color-brand-950: #190108;
+
+    /* Gray scale */
+    --color-gray-50: #fafafa;
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #d4d4d4;
+    --color-gray-400: #a3a3a3;
+    --color-gray-500: #737373;
+    --color-gray-600: #525252;
+    --color-gray-700: #404040;
+    --color-gray-800: #262626;
+    --color-gray-900: #171717;
+    --color-gray-950: #0a0a0a;
+
+    /* Core colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-charcoal: #343633;
+
+    /* Semantic colors (light theme defaults) */
+    --color-bg: var(--color-white);
+    --color-bg-muted: var(--color-gray-50);
+    --color-surface: var(--color-white);
+    --color-border: var(--color-gray-200);
+
+    --color-text: var(--color-gray-900);
+    --color-text-muted: var(--color-gray-500);
+    --color-text-inverse: var(--color-white);
+
+    --color-primary: var(--color-brand-500);
+    --color-primary-hover: var(--color-brand-600);
+    --color-primary-soft: var(--color-brand-50);
+
+    --color-danger: var(--color-brand-600);
+    --color-danger-soft: var(--color-brand-50);
+
+    --focus-ring-color: var(--color-brand-500);
+
+    /* Font families */
+    --font-urbanist:
+      "Urbanist", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+      "Segoe UI", sans-serif;
+    --font-ibm-plex-serif:
+      "IBM Plex Serif", "Georgia", "Times New Roman", serif;
+    --font-delicious-handrawn: "Delicious Handrawn", "Comic Sans MS", cursive;
+
+    /* Semantic font roles */
+    --font-body: var(--font-urbanist);
+    --font-heading: var(--font-ibm-plex-serif);
+    --font-app: var(--font-delicious-handrawn);
+
+    /* Typography scale */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+
+    /* Spacing scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+
+    /* Radius, shadows, etc. */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-pill: 999px;
+  }
+
+  /* Dark theme – toggle with [data-theme="dark"] */
+  :root[data-theme="dark"] {
+    --color-bg: var(--color-gray-950);
+    --color-bg-muted: var(--color-gray-900);
+    --color-surface: var(--color-gray-900);
+    --color-border: var(--color-gray-700);
+
+    --color-text: var(--color-gray-50);
+    --color-text-muted: var(--color-gray-400);
+    --color-text-inverse: var(--color-black);
+
+    --color-primary: var(--color-brand-400);
+    --color-primary-hover: var(--color-brand-500);
+
+    --focus-ring-color: var(--color-brand-400);
+  }
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s ease-out;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+@layer utilities {
+  /* Utility classes */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .visually-hidden:focus,
+  .visually-hidden:focus-within {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* accent texts and links */
+  .accent-text,
+  .accent-link {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  .accent-link:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    transition: 0.2s ease-out;
+  }
+
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+
+  .handwritten {
+    font-family: var(--font-app);
+  }
+
+  /* Flexbox utilities */
+  .flex {
+    display: flex;
+  }
+
+  .inline-flex {
+    display: inline-flex;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .items-start {
+    align-items: flex-start;
+  }
+
+  .items-end {
+    align-items: flex-end;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-start {
+    justify-content: flex-start;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .gap-2 {
+    gap: var(--space-2);
+  }
+
+  .gap-4 {
+    gap: var(--space-4);
+  }
+
+  .gap-6 {
+    gap: var(--space-6);
+  }
+
+  .gap-8 {
+    gap: var(--space-8);
+  }
+}
