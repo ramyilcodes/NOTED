@@ -18,7 +18,7 @@
   <body>
     <aside class="sidebar flex flex-col gap-4">
       <header class="sidebar__header flex flex-col gap-4">
-        <a href="/index.html" class="sidebar__title">Noted</a>
+        <h1><a href="/index.html" class="sidebar__title">Noted</a></h1>
 
         <div class="sidebar__user flex gap-4 items-center">
           <figure>
@@ -29,11 +29,13 @@
       </header>
 
       <nav class="sidebar__nav flex flex-col gap-2">
-        <a href="./feed.html" class="sidebar__navitem sidebar__navitem--active">
-          Feed
-        </a>
+        <a href="./feed.html" class="sidebar__navitem"> Feed </a>
         <a href="./personal.html" class="sidebar__navitem">Personal</a>
-        <a href="./create.html" class="sidebar__navitem">Create</a>
+        <a
+          href="./create.html"
+          class="sidebar__navitem sidebar__navitem--active"
+          >Create</a
+        >
         <a href="./profile.html" class="sidebar__navitem">Profile</a>
       </nav>
 
@@ -98,13 +100,13 @@
             </fieldset>
           </div>
 
-          <fieldset
-            class="create-form__upload flex flex-col gap-2"
-          >
+          <fieldset class="create-form__upload flex flex-col gap-2">
             <label for="postImage" class="form-label accent-text">
               Any evidence you want to add?
             </label>
-            <div class="file-upload-zone flex flex-col justify-center items-center gap-2">
+            <div
+              class="file-upload-zone flex flex-col justify-center items-center gap-2"
+            >
               <input
                 type="file"
                 name="postImage"
