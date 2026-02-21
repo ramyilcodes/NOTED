@@ -8,6 +8,8 @@ Small acts of care are forgotten quickly, so we are created Noted, a platform to
 4. [Contribution Table](https://docs.google.com/spreadsheets/d/1YYsVMW0SGxL__6XyLTcpdheRG8QLJVg2VCM85gXqKtk/edit?usp=sharing)
 5. [1st Presentation](https://docs.google.com/presentation/d/1Nbqrjm2MTgQhb3uXlN_r87QIMqcf7VXdgsS5AIWqVug/edit?usp=sharing)
 6. [Current Presentation](https://docs.google.com/presentation/d/1ipUnzhjRYOOEs_QzYR0Iav29CwuVbm0Fxq73Oyb6ygs/edit?usp=sharing)
+7. [Ramnan's Case Study](https://medium.com/@ramnanramyil/noted-a-case-study-d451034d1c55)
+8. [Ejemen's Case Study](https://medium.com/@ejemeniboi/noted-building-for-love-a-case-study-4521f36c5cbd)
 ---
 
 ## Style Guide
