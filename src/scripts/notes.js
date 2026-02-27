@@ -1,15 +1,28 @@
 let allNotes = [];
+let personalNotes = [];
 
 const noteContainer = document.getElementById("noteContainer");
+const pageType = noteContainer?.dataset.page;
 
 fetch("../scripts/notes.json")
   .then((res) => res.json())
   .then((data) => {
     allNotes = data.notes;
-    renderNotes(allNotes);
+
+    personalNotes = data.notes.filter((note) => note.type === "personal");
+
+    // render personal notes
+    if (pageType === "personal") {
+      renderNotes(personalNotes);
+    }
+
+    else{
+        renderNotes(allNotes);
+    }
   })
   .catch((error) => console.error("Error loading notes:", error));
 
+  
 // render notes
 function renderNotes(notes) {
   noteContainer.innerHTML = "";
