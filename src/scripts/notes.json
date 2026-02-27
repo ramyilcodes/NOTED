@@ -1,0 +1,46 @@
+[
+  {
+    "id": "seed-1",
+    "text": "Guess who finally took a walk with you today instead of doom‑scrolling. It felt small but really special.",
+    "author": {
+      "name": "Ramnan Ramyil",
+      "email": "ramnan@example.com"
+    },
+    "images": [],
+    "type": "public",
+    "createdAt": 1704067200000
+  },
+  {
+    "id": "seed-2",
+    "text": "You made me tea before your meeting and left a sticky note that said “good luck today”. I felt so seen.",
+    "author": {
+      "name": "Ejemen Iboi",
+      "email": "ejemen@example.com"
+    },
+    "images": [],
+    "type": "public",
+    "createdAt": 1704153600000
+  },
+  {
+    "id": "seed-3",
+    "text": "You remembered that I hate calls after 9pm and texted instead. It was a tiny thing, but it meant a lot.",
+    "author": {
+      "name": "Sofia Abubakar",
+      "email": "sofia@example.com"
+    },
+    "images": [],
+    "type": "personal",
+    "createdAt": 1704240000000
+  },
+  {
+    "id": "seed-4",
+    "text": "You sent me a voice note in the middle of your busy day just to say you were thinking of me.",
+    "author": {
+      "name": "Ejemen Iboi",
+      "email": "ejemeniboi@gmail.com"
+    },
+    "images": [],
+    "type": "personal",
+    "createdAt": 1704326400000
+  }
+]
