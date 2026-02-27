@@ -51,42 +51,11 @@
       <!-- visually hidden with css -->
       <h2 class="visually-hidden">Your Feed</h2>
 
-      <section class="notes-container flex flex-col gap-8">
-        <!-- post -->
-        <article class="note">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
-          </figure>
-
-          <div class="note_content flex flex-col gap-2">
-            <h3 class="note__author">Ramnan Ramyil</h3>
-            <p class="note__text">
-              Guess who’s trying skincare now. Now I’m standing in front of the
-              mirror at night, tapping some kind of serum on my face.
-            </p>
-
-            <figure class="note_attachment">
-              <!-- picture in the post -->
-              <img src="" alt="Applying serum in the mirror" />
-            </figure>
-          </div>
-        </article>
-
-        <!-- post -->
-        <article class="note">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
-          </figure>
-
-          <div class="note_content flex flex-col gap-2">
-            <h3 class="note__author">Sofia Abubakar</h3>
-            <p class="note__text">
-              Guess who’s trying skincare now. Now I’m standing in front of the
-              mirror at night, tapping some kind of serum on my face.
-            </p>
-          </div>
-        </article>
+      <section id="noteContainer" class="notes-container flex flex-col gap-8" data-page="personal">
+        <!-- personal notes go here -->
       </section>
     </main>
+
+    <script src="../scripts/notes.js"></script>
   </body>
 </html>
