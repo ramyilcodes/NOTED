@@ -23,6 +23,13 @@ body {
 /* SIDEBAR STYLES */
 .sidebar {
   padding: var(--space-4);
+
+  @media (max-width: 768px) {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-brand-50);
+  }
 }
 
 .sidebar__title {
@@ -58,6 +65,29 @@ body {
 .sidebar__navitem--logout {
   margin-top: auto;
   background-color: var(--color-gray-50);
+}
+
+.mobile-hidden{
+  @media (max-width: 768px){
+    display: none;
+  }
+}
+
+.menu-toggle {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    background: none;
+    border: none;
+    width: min-content;
+    margin-top: 0.67rem;
+    cursor: pointer;
+  }
+}
+
+.menu-toggle img {
+  width: 2rem;
 }
 
 /* MAIN CONTENT STYLES */

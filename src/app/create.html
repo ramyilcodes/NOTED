@@ -17,33 +17,34 @@
   </head>
   <body>
     <aside class="sidebar flex flex-col gap-4">
-      <header class="sidebar__header flex flex-col gap-4">
-        <h1><a href="/index.html" class="sidebar__title">Noted</a></h1>
+      <header class="sidebar__header flex justify-between items-start gap-4">
+        <div class="flex flex-col gap-4">
+          <h1><a href="/index.html" class="sidebar__title">Noted</a></h1>
 
-        <div class="sidebar__user flex gap-4 items-center">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="Leye Doe" />
-          </figure>
-          <h2>Ramnan Ramyil</h2>
+          <div id="sidebar_user" class="sidebar__user flex gap-4 items-center mobile-hidden">
+            <figure>
+              <img src="../assets/default-pfp.svg" alt="Leye Doe" />
+            </figure>
+            <h2>Ramnan Ramyil</h2>
+          </div>
         </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <img src="../assets/openMenu.png" alt="Open menu" id="menuIcon" />
+        </button>
       </header>
 
-      <nav class="sidebar__nav flex flex-col gap-2">
-        <a href="./feed.html" class="sidebar__navitem"> Feed </a>
+      <nav id="sidebar_nav" class="sidebar__nav flex flex-col gap-2 mobile-hidden">
+        <a href="./feed.html" class="sidebar__navitem">Feed</a>
         <a href="./personal.html" class="sidebar__navitem">Personal</a>
-        <a
-          href="./create.html"
-          class="sidebar__navitem sidebar__navitem--active"
-        >
-          Create
-        </a>
+        <a href="./create.html" class="sidebar__navitem sidebar__navitem--active">Create</a>
         <a href="./profile.html" class="sidebar__navitem">Profile</a>
       </nav>
 
-      <!-- temporary direction to login page until we can use JS -->
       <a
+        id="sidebar_logout"
         href="../auth/login.html"
-        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4"
+        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4 mobile-hidden"
       >
         Log out
         <img src="../assets/log-out.svg" alt="Logout icon" />
