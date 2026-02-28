@@ -1,3 +1,20 @@
+import {
+  authService,
+  initLoginPage,
+  initLogoutLink,
+  initRegisterPage,
+  populateUserDetails,
+} from "./auth.js";
+import { db } from "./db.js";
+
+function getPathname() {
+  try {
+    return window.location.pathname || "";
+  } catch {
+    return "";
+  }
+}
+
 function toggleSideBar() {
   const menuToggle = document.getElementById("menuToggle");
   const menuIcon = document.getElementById("menuIcon");
@@ -5,6 +22,7 @@ function toggleSideBar() {
   const sidebar_nav = document.getElementById("sidebar_nav");
   const sidebar_logout = document.getElementById("sidebar_logout");
 
+  if (!menuToggle) return;
   menuToggle.addEventListener("click", () => {
     sidebar_user.classList.toggle("mobile-hidden");
     sidebar_nav.classList.toggle("mobile-hidden");
@@ -21,12 +39,32 @@ function toggleSideBar() {
   });
 }
 
-toggleSideBar();
-
-import { db } from "./db.js";
-
 async function initApp() {
   await db.init();
+
+  const path = getPathname();
+
+  if (path.endsWith("/auth/login.html")) {
+    initLoginPage();
+    return;
+  }
+
+  if (path.endsWith("/auth/register.html")) {
+    initRegisterPage();
+    return;
+  }
+
+  if (path.includes("/app/")) {
+    const currentUser = authService.getCurrentUser();
+    if (!currentUser) {
+      window.location.href = "../auth/login.html";
+      return;
+    }
+
+    populateUserDetails(currentUser);
+    initLogoutLink();
+    toggleSideBar();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
