@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/form.css" />
-    <link rel="stylesheet" href="../css/elements.css">
+    <link rel="stylesheet" href="../css/elements.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -13,7 +13,9 @@
     <title>Noted: Register</title>
   </head>
 
-  <body class="form-container handwritten flex flex-col items-center justify-center gap-6">
+  <body
+    class="form-container handwritten flex flex-col items-center justify-center gap-6"
+  >
     <header>
       <h1 class="form-heading">Sign Up to Noted</h1>
     </header>
@@ -24,7 +26,9 @@
           <legend class="visually-hidden">Personal Details</legend>
           <!-- will be hidden with css-->
 
-          <label for="userName" class="input-label accent-text">Full Name</label>
+          <label for="userName" class="input-label accent-text">
+            Full Name
+          </label>
           <input
             type="text"
             id="userName"
@@ -46,7 +50,9 @@
             class="input-field"
           />
 
-          <label for="userPassword" class="input-label accent-text">Password</label>
+          <label for="userPassword" class="input-label accent-text">
+            Password
+          </label>
           <input
             type="password"
             name="userPassword"
@@ -55,7 +61,9 @@
             class="input-field"
           />
 
-          <label for="confirmUserPassword" class="input-label accent-text">Confirm Password</label>
+          <label for="confirmUserPassword" class="input-label accent-text">
+            Confirm Password
+          </label>
           <input
             type="password"
             name="confirmUserPassword"
@@ -66,11 +74,15 @@
         </fieldset>
 
         <!-- <button type="submit" class="btn-submit"> -->
-          <a href="../app/feed.html" class="btn btn-primary">Register</a>
+        <a href="../app/feed.html" class="btn btn-primary">Register</a>
         <!-- </button> -->
 
-        <p class="text-center account">Already have an account? <a href="login.html" class="accent-link">Login</a></p>
+        <p class="text-center account">
+          Already have an account?
+          <a href="login.html" class="accent-link">Login</a>
+        </p>
       </form>
     </main>
+    <script type="module" src="../scripts/app.js"></script>
   </body>
 </html>
