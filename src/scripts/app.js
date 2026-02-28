@@ -6,6 +6,7 @@ import {
   populateUserDetails,
 } from "./auth.js";
 import { db } from "./db.js";
+import { initNotesPage, initCreatePage } from "./notes.js";
 
 function getPathname() {
   try {
@@ -17,12 +18,13 @@ function getPathname() {
 
 function toggleSideBar() {
   const menuToggle = document.getElementById("menuToggle");
+  if (!menuToggle) return;
+
   const menuIcon = document.getElementById("menuIcon");
   const sidebar_user = document.getElementById("sidebar_user");
   const sidebar_nav = document.getElementById("sidebar_nav");
   const sidebar_logout = document.getElementById("sidebar_logout");
 
-  if (!menuToggle) return;
   menuToggle.addEventListener("click", () => {
     sidebar_user.classList.toggle("mobile-hidden");
     sidebar_nav.classList.toggle("mobile-hidden");
@@ -31,10 +33,10 @@ function toggleSideBar() {
     // Change icon
     if (sidebar_user.classList.contains("mobile-hidden")) {
       menuIcon.src = "../assets/openMenu.png";
-      menuIcon.alt = "Close menu";
+      menuIcon.alt = "Open menu";
     } else {
       menuIcon.src = "../assets/closeMenu.png";
-      menuIcon.alt = "Open menu";
+      menuIcon.alt = "Close menu";
     }
   });
 }
@@ -64,6 +66,8 @@ async function initApp() {
     populateUserDetails(currentUser);
     initLogoutLink();
     toggleSideBar();
+    await initNotesPage();
+    initCreatePage();
   }
 }
 
