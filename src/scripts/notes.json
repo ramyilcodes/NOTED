@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "author": "Ramnan Ramyil",
+    "text": "Guess who's trying skincare now. Now I'm standing in front of the mirror at night, tapping some kind of serum on my face.",
+    "images": ["../assets/love_bytes.svg", "../assets/reminders.svg"],
+    "type": "personal"
+  },
+  {
+    "id": 2,
+    "author": "Sofia Abubakar",
+    "text": "Just sent my boo a hefty valentine's package. You already know I'm the package sending final boss lol.",
+    "images": ["", ""],
+    "type": "personal"
+  },
+  {
+    "id": 3,
+    "author": "Ejemen Iboi",
+    "text": "Guess who's trying skincare now. Now I'm standing in front of the mirror at night, tapping some kind of serum on my face.",
+    "images": ["", ""],
+    "type": "public"
+  }
+]

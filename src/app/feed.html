@@ -17,18 +17,30 @@
   </head>
   <body>
     <aside class="sidebar flex flex-col gap-4">
-      <header class="sidebar__header flex flex-col gap-4">
-        <h1><a href="/index.html" class="sidebar__title">Noted</a></h1>
+      <header class="sidebar__header flex justify-between items-start gap-4">
+        <div class="flex flex-col gap-4">
+          <h1><a href="/index.html" class="sidebar__title">Noted</a></h1>
 
-        <div class="sidebar__user flex gap-4 items-center">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="Leye Doe" />
-          </figure>
-          <h2>Ramnan Ramyil</h2>
+          <div
+            id="sidebar_user"
+            class="sidebar__user flex gap-4 items-center mobile-hidden"
+          >
+            <figure>
+              <img src="../assets/default-pfp.svg" alt="Leye Doe" />
+            </figure>
+            <h2>Ramnan Ramyil</h2>
+          </div>
         </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <img src="../assets/openMenu.png" alt="Open menu" id="menuIcon" />
+        </button>
       </header>
 
-      <nav class="sidebar__nav flex flex-col gap-2">
+      <nav
+        id="sidebar_nav"
+        class="sidebar__nav flex flex-col gap-2 mobile-hidden"
+      >
         <a href="./feed.html" class="sidebar__navitem sidebar__navitem--active">
           Feed
         </a>
@@ -39,8 +51,9 @@
 
       <!-- temporary direction to login page until we can use JS -->
       <a
+        id="sidebar_logout"
         href="../auth/login.html"
-        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4"
+        class="sidebar__navitem sidebar__navitem--logout flex justify-between gap-4 mobile-hidden"
       >
         Log out
         <img src="../assets/log-out.svg" alt="Logout icon" />
@@ -51,61 +64,14 @@
       <!-- visually hidden with css -->
       <h2 class="visually-hidden">Your Feed</h2>
 
-      <section class="notes-container flex flex-col gap-8">
-        <!-- post -->
-        <article class="note">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
-          </figure>
-
-          <div class="note_content flex flex-col gap-2">
-            <h3 class="note__author">Ramnan Ramyil</h3>
-            <p class="note__text">
-              Guess who&apos;s trying skincare now. Now I&apos;m standing in
-              front of the mirror at night, tapping some kind of serum on my
-              face.
-            </p>
-
-            <figure class="note_attachment">
-              <!-- picture in the post -->
-              <img src="" alt="Applying serum in the mirror" />
-            </figure>
-          </div>
-        </article>
-
-        <!-- post -->
-        <article class="note">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
-          </figure>
-
-          <div class="note_content flex flex-col gap-2">
-            <h3 class="note__author">Sofia Abubakar</h3>
-            <p class="note__text">
-              Guess who’s trying skincare now. Now I’m standing in front of the
-            mirror at night, tapping some kind of serum on my face.
-            </p>
-          </div>
-        </article>
-
-        <!-- post -->
-        <article class="note">
-          <figure>
-            <img src="../assets/default-pfp.svg" alt="" loading="lazy" />
-          </figure>
-
-          <div class="note_content flex flex-col gap-2">
-            <h3 class="note__author">Ejemen Iboi</h3>
-            <p class="note__text"></p>
-
-            <figure class="note_attachment">
-              <!-- pictures in the post -->
-              <img src="" alt="Me with my boo" />
-              <img src="" alt="Me with my boo having coffee" />
-            </figure>
-          </div>
-        </article>
+      <section
+        id="noteContainer"
+        class="notes-container flex flex-col gap-8"
+        data-page="feed"
+      >
+        <!-- notes go here -->
       </section>
     </main>
+    <script type="module" src="../scripts/app.js"></script>
   </body>
 </html>
